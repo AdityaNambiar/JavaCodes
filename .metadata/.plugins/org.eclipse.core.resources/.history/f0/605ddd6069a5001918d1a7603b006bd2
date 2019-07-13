@@ -1,0 +1,10 @@
+public class StaticVsInstance {
+	public static void staticMethod(int a, int b) {
+		// Member variables.
+		System.out.println(String.valueOf(a)+" "+String.valueOf(b));
+	}
+	public static void main(String args[]) {
+		StaticVsInstance X = new StaticVsInstance();
+		X.staticMethod(2, 3);
+	}
+}
