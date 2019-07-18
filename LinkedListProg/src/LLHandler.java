@@ -69,14 +69,13 @@ class LinkedList{
 		}
 		return c;
 	}
-	public void insertNode(int pos, Object data) { // broken code - Executes by itself after every line in main is done :OOO
+	public void insertNode(int pos, Object data) {
 		Node newNode = new Node(data, null);
 		Node temp = getHead();
 		if (temp.getNext() == null) {
 			addNode(data);
 		}
 		while (pos > pos-1) {
-			pos--;
 			//LLHandler.op("CHECK HERE: "+String.valueOf(temp.getData()));
 			newNode.setNext(temp.getNext());
 			temp.setNext(newNode);	
@@ -104,7 +103,6 @@ public class LLHandler {
 		ll.addNode(name);
 		ll.addNode(val1);
 		ll.display();
-		op("Length of LL: "+String.valueOf(ll.length()));
 		ll.insertNode(2, name+"Nigga");
 		
 		ll.display();
