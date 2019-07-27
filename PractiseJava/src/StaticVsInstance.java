@@ -8,7 +8,7 @@ public class StaticVsInstance {
  	/* 
  	 * A static method can only have static variables or static methods ONLY.
  	 * "this" keyword and "super" keyword CANNOT be used in a static method.
- 	 * "this" keyword refers to an object. Objects do not come in the context of static methods. 
+ 	 * "this" keyword refers to an object and "super" refers to parent class object. Objects do not come in the context of static methods. 
  	 *  - So, you'd only use "this" as a keyword to refer to an Object in it's context (not a static i.e. Class context)
  	 * */
 	public static int staticMethod(int a, int b) {
